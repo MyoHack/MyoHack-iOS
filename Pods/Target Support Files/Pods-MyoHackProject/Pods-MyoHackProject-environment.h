@@ -12,3 +12,9 @@
 #define COCOAPODS_VERSION_MINOR_Alamofire 2
 #define COCOAPODS_VERSION_PATCH_Alamofire 3
 
+// BEMSimpleLineGraph
+#define COCOAPODS_POD_AVAILABLE_BEMSimpleLineGraph
+#define COCOAPODS_VERSION_MAJOR_BEMSimpleLineGraph 4
+#define COCOAPODS_VERSION_MINOR_BEMSimpleLineGraph 0
+#define COCOAPODS_VERSION_PATCH_BEMSimpleLineGraph 0
+
