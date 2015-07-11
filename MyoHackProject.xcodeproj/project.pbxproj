@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17A87501220F360C77A06DE2 /* Pods_MyoHackProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844E89D91FD1772C48533305 /* Pods_MyoHackProject.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		BDE542541B51797A0091DF0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE542531B51797A0091DF0D /* AppDelegate.swift */; };
 		BDE542561B51797A0091DF0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE542551B51797A0091DF0D /* ViewController.swift */; };
 		BDE542591B51797A0091DF0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE542571B51797A0091DF0D /* Main.storyboard */; };
@@ -26,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2559D4974A4A4C353D595FE4 /* Pods-MyoHackProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyoHackProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyoHackProject/Pods-MyoHackProject.release.xcconfig"; sourceTree = "<group>"; };
+		844E89D91FD1772C48533305 /* Pods_MyoHackProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyoHackProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A1D6EF72F8E1D2C1D9AB96C /* Pods-MyoHackProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyoHackProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyoHackProject/Pods-MyoHackProject.debug.xcconfig"; sourceTree = "<group>"; };
 		BDE5424E1B51797A0091DF0D /* MyoHackProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyoHackProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE542521B51797A0091DF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDE542531B51797A0091DF0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A87501220F360C77A06DE2 /* Pods_MyoHackProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20034A8CA9F4B65EC37BC8B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A1D6EF72F8E1D2C1D9AB96C /* Pods-MyoHackProject.debug.xcconfig */,
+				2559D4974A4A4C353D595FE4 /* Pods-MyoHackProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BDE542451B51797A0091DF0D = {
 			isa = PBXGroup;
 			children = (
 				BDE542501B51797A0091DF0D /* MyoHackProject */,
 				BDE542661B51797B0091DF0D /* MyoHackProjectTests */,
 				BDE5424F1B51797A0091DF0D /* Products */,
+				20034A8CA9F4B65EC37BC8B2 /* Pods */,
+				FB9F1ABC253C6D1F65994339 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +128,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FB9F1ABC253C6D1F65994339 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				844E89D91FD1772C48533305 /* Pods_MyoHackProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDE5426D1B51797B0091DF0D /* Build configuration list for PBXNativeTarget "MyoHackProject" */;
 			buildPhases = (
+				DE0201B0DE5AEF6CB16E12BB /* Check Pods Manifest.lock */,
 				BDE5424A1B51797A0091DF0D /* Sources */,
 				BDE5424B1B51797A0091DF0D /* Frameworks */,
 				BDE5424C1B51797A0091DF0D /* Resources */,
+				C4CFFFF0C4C92FE76E924ACD /* Embed Pods Frameworks */,
+				9697DB583997F563A2F53442 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +233,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9697DB583997F563A2F53442 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyoHackProject/Pods-MyoHackProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4CFFFF0C4C92FE76E924ACD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyoHackProject/Pods-MyoHackProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE0201B0DE5AEF6CB16E12BB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BDE5424A1B51797A0091DF0D /* Sources */ = {
@@ -338,6 +413,7 @@
 		};
 		BDE5426E1B51797B0091DF0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A1D6EF72F8E1D2C1D9AB96C /* Pods-MyoHackProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyoHackProject/Info.plist;
@@ -348,6 +424,7 @@
 		};
 		BDE5426F1B51797B0091DF0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2559D4974A4A4C353D595FE4 /* Pods-MyoHackProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyoHackProject/Info.plist;
@@ -409,6 +486,7 @@
 				BDE5426F1B51797B0091DF0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDE542701B51797B0091DF0D /* Build configuration list for PBXNativeTarget "MyoHackProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +495,7 @@
 				BDE542721B51797B0091DF0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
