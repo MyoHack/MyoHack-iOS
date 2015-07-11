@@ -14,6 +14,7 @@
 		BDE5425B1B51797A0091DF0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE5425A1B51797A0091DF0D /* Images.xcassets */; };
 		BDE5425E1B51797A0091DF0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDE5425C1B51797A0091DF0D /* LaunchScreen.xib */; };
 		BDE5426A1B51797B0091DF0D /* MyoHackProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE542691B51797B0091DF0D /* MyoHackProjectTests.swift */; };
+		BDE542761B517E0E0091DF0D /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE542751B517E0E0091DF0D /* MyoKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		BDE542631B51797B0091DF0D /* MyoHackProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyoHackProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE542681B51797B0091DF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDE542691B51797B0091DF0D /* MyoHackProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyoHackProjectTests.swift; sourceTree = "<group>"; };
+		BDE542751B517E0E0091DF0D /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyoKit.framework; sourceTree = "<group>"; };
+		BDE542771B517EF10091DF0D /* MyoHackProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyoHackProject-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17A87501220F360C77A06DE2 /* Pods_MyoHackProject.framework in Frameworks */,
+				BDE542761B517E0E0091DF0D /* MyoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +103,7 @@
 				BDE5425A1B51797A0091DF0D /* Images.xcassets */,
 				BDE5425C1B51797A0091DF0D /* LaunchScreen.xib */,
 				BDE542511B51797A0091DF0D /* Supporting Files */,
+				BDE542771B517EF10091DF0D /* MyoHackProject-Bridging-Header.h */,
 			);
 			path = MyoHackProject;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 		FB9F1ABC253C6D1F65994339 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BDE542751B517E0E0091DF0D /* MyoKit.framework */,
 				844E89D91FD1772C48533305 /* Pods_MyoHackProject.framework */,
 			);
 			name = Frameworks;
@@ -416,9 +422,14 @@
 			baseConfigurationReference = 8A1D6EF72F8E1D2C1D9AB96C /* Pods-MyoHackProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyoHackProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyoHackProject/MyoHackProject-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -427,9 +438,14 @@
 			baseConfigurationReference = 2559D4974A4A4C353D595FE4 /* Pods-MyoHackProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyoHackProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyoHackProject/MyoHackProject-Bridging-Header.h";
 			};
 			name = Release;
 		};
