@@ -5,7 +5,6 @@ use_frameworks!
 target 'MyoHackProject' do
 
 pod 'Alamofire', '~> 1.2'
-pod 'BEMSimpleLineGraph'
 
 end
 

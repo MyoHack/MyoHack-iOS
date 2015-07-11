@@ -10,6 +10,6 @@
 #define MyoHackProject_MyoHackProject_Bridging_Header_h
 
 #import <MyoKit/MyoKit.h>
-#import <BEMSimpleLineGraph/BEMSimpleLineGraphView.h>
+#import "BEMSimpleLineGraphView.h"
 
 #endif

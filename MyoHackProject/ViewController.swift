@@ -15,27 +15,63 @@ var zPoints : [CGFloat] = [0.0]
 
 class ViewController: UIViewController, BEMSimpleLineGraphDataSource, BEMSimpleLineGraphDelegate {
 
+    var xGraph : BEMSimpleLineGraphView!
+    var counter = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        xPoints = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
         
         TLMHub.sharedHub().attachByIdentifier(myoIdentifier)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "didReceiveOrientationEvent:", name: TLMMyoDidReceiveOrientationEventNotification, object: nil)
         
-        var xGraph : BEMSimpleLineGraphView = BEMSimpleLineGraphView(frame: CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height/3))
+        
+        xGraph = BEMSimpleLineGraphView(frame: CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height/3))
+        xGraph.animationGraphStyle = BEMLineAnimation.None
+        xGraph.enableBezierCurve = true
         xGraph.dataSource = self
         xGraph.delegate = self
         self.view.addSubview(xGraph)
-        
     
     }
     
     func didReceiveOrientationEvent(notification: NSNotification) {
         var orientation = notification.userInfo![kTLMKeyOrientationEvent]! as! TLMOrientationEvent
         
+        xPoints.append(CGFloat(orientation.quaternion.x))
+        self.refreshGraph(orientation.quaternion)
         
         println("\(orientation.quaternion.x), \(orientation.quaternion.y), \(orientation.quaternion.z), \(orientation.quaternion.w)")
+    }
+    
+    func refreshGraph(quat : TLMQuaternion) {
+    
+        /*
+        if (counter % 10 == 0) {
+            if xPoints.count <= 20 {
+                xPoints.append(CGFloat(quat.x))
+                xGraph.reloadGraph()
+            }
+            else {
+                xPoints.removeAtIndex(0)
+                xPoints.append(CGFloat(quat.x))
+                xGraph.reloadGraph()
+            }
+            counter = 0
+        }
+        counter++
+*/
+        xGraph.reloadGraph()
+    }
+    
+    func numberOfPointsInLineGraph(graph: BEMSimpleLineGraphView) -> Int {
+        return 20
+    }
+    
+    func lineGraph(graph: BEMSimpleLineGraphView, valueForPointAtIndex index: Int) -> CGFloat {
+        return xPoints[xPoints.count - 20 + index]
     }
     
     override func viewDidAppear(animated: Bool) {

@@ -7,346 +7,216 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		133E52602E678F8313016F42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45ECC3DDF00445BB1F8E62D8 /* Foundation.framework */; };
-		219A5CC4307A4651717359CB /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D1F90B3E2BD2D4B2E3457E /* Download.swift */; };
-		2866771045509972CFD98ADD /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE200D4A8FA9DF011766ECA /* Manager.swift */; };
-		2DA557ACBEBD764C18371C79 /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CDD78BA24AEE0C217F4BEE /* BEMCircle.m */; };
-		2E50FADB46340E43C6F6EF14 /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE8419A9287FF373E15FA03 /* BEMLine.m */; };
-		4C0028CFE737D3AC70B88C15 /* Pods-MyoHackProject-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB33971DAF6BC3403DF2EE38 /* Pods-MyoHackProject-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52BD3883C7BF6A99D41E38B3 /* Pods-MyoHackProject-BEMSimpleLineGraph-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A655981A3E6006747DAC70 /* Pods-MyoHackProject-BEMSimpleLineGraph-dummy.m */; };
-		609F7F143CBE35A29FE82694 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005A9D0DDF3F69F65DE83F82 /* ResponseSerialization.swift */; };
-		6BCB7ADCA35C7FBEE2C7C1AA /* BEMLine.h in Headers */ = {isa = PBXBuildFile; fileRef = BD2358F6B994E33D552B71DF /* BEMLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6FC6F690EACB5B823B268940 /* BEMAverageLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F57C03F00FB1BEE0DA4A7E2C /* BEMAverageLine.m */; };
-		7C5EA331ADDEF5942BCD7F71 /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F8940316F203D28ECE629B /* BEMSimpleLineGraphView.m */; };
-		7E6ECE1CF3101C56C6241F32 /* Pods-MyoHackProject-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E61904FC60F9F3D9DC4A56 /* Pods-MyoHackProject-Alamofire-dummy.m */; };
-		8166D0DB8715C1351FBBE09E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45ECC3DDF00445BB1F8E62D8 /* Foundation.framework */; };
-		862EF43E192455D0ABB4A041 /* BEMAverageLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 42360A3928379D7C295128EA /* BEMAverageLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8EBCA293F8A2BE2772AA3846 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B33ABF5DB7E6F1A99A0589 /* Request.swift */; };
-		9369A436E583E2E873766CD0 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5E5924BBC736CF45057808 /* Alamofire.swift */; };
-		93F9361673275F341018BD18 /* BEMPermanentPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BEC9B3073D571308A16211 /* BEMPermanentPopupView.m */; };
-		9574CF765D61271E252D489B /* Pods-MyoHackProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7EF4AE84917BC835451EA5 /* Pods-MyoHackProject-dummy.m */; };
-		97FA7FD7DD70F2ACAB2EA6E4 /* BEMSimpleLineGraphView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F8B7D156B1FE9F84E4A04CD /* BEMSimpleLineGraphView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9BC67CF740D54C3E1A1C421C /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C43750370BC6F9FA56E55C6 /* ParameterEncoding.swift */; };
-		9E52F339CB7975BB17E3CAA9 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0995116E99143C4AA29EBB03 /* Validation.swift */; };
-		B0805C6ACEE2481E28C96988 /* Pods-MyoHackProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E1D46F88D7E4F0A601E1BC6 /* Pods-MyoHackProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5098FD63E6A88CC52A81A9D /* BEMCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 3736FABB61BAE77BF56B63E9 /* BEMCircle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B71A03C0F5203698379B8648 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8435C038A033AC7A94E617 /* Upload.swift */; };
-		CA07B6C9B92A60B52297258C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45ECC3DDF00445BB1F8E62D8 /* Foundation.framework */; };
-		EA46B9D7A0CED9BC40312855 /* Pods-MyoHackProject-BEMSimpleLineGraph-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5164BFA46C781555E19CE2D7 /* Pods-MyoHackProject-BEMSimpleLineGraph-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5E9AC49093AE3D7728C8D68 /* BEMPermanentPopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = E1E8DDA53A848211B9A8292B /* BEMPermanentPopupView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		130615E6D04F9FF9870E737E /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6139BC1315DE05062B7D5F /* Manager.swift */; };
+		2247D1AF7189BC87A306CDF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B237AC0E8E8BC1B9AD8863 /* Foundation.framework */; };
+		3CEEC922D1825081AFF4506A /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB7645726B5146F19F01CC /* Alamofire.swift */; };
+		5825FF78F5CDD6C8F78B58ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B237AC0E8E8BC1B9AD8863 /* Foundation.framework */; };
+		5C6BF7B6510918D7DC80C2F5 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2384DD8D6FCD15C852409 /* ResponseSerialization.swift */; };
+		5E348CD6BD8132BBEB7D0FFF /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7953E6AD4552A292FCDCDD93 /* Request.swift */; };
+		629C4E950405064D540E544A /* Pods-MyoHackProject-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB5D30BB4E1FCEC64C1AF080 /* Pods-MyoHackProject-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C5310D88A727D8EC8EA709C /* Pods-MyoHackProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE0FF68BE133FD152184C55 /* Pods-MyoHackProject-dummy.m */; };
+		81F14F34636A0E5117BFE98F /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1752C3BC4C94E602F3C22379 /* ParameterEncoding.swift */; };
+		909AE77688BB803662AD8839 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0A968973EC9A71E709956 /* Validation.swift */; };
+		B72EE95BFB67D6D8F648F1BB /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = E579E0AFEEB06BAC1309C4BA /* Download.swift */; };
+		CB933CDC3AC2089A1CDBEC29 /* Pods-MyoHackProject-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AADDB6F89C2505ACFA7F284 /* Pods-MyoHackProject-Alamofire-dummy.m */; };
+		DA10122117D8825346033294 /* Pods-MyoHackProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A35C0011731B3715AD39D449 /* Pods-MyoHackProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4E7166F19F6B197DAFDD6A7 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF088B2F0522F8589F8A07 /* Upload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9834FF9FA8DA67A9F24681AB /* PBXContainerItemProxy */ = {
+		1744A7F07304A526C4B193C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2577994A785A7B977833E81C /* Project object */;
+			containerPortal = 9DBE27B9B22D9AD45054358B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6B435E7600EA67ECB04D6685;
-			remoteInfo = "Pods-MyoHackProject-BEMSimpleLineGraph";
-		};
-		F1AD2C323875935BA70FC586 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2577994A785A7B977833E81C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FCD45F3CCB281EBC7B029CB6;
+			remoteGlobalIDString = 5C15FBDAEDA1D5FC554B0886;
 			remoteInfo = "Pods-MyoHackProject-Alamofire";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		005A9D0DDF3F69F65DE83F82 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		02B36049218970E856E64DB0 /* Pods_MyoHackProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyoHackProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0995116E99143C4AA29EBB03 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		0C43750370BC6F9FA56E55C6 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		1390F0B2C416AD0B7AC3CAF3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14B33ABF5DB7E6F1A99A0589 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		15D1F90B3E2BD2D4B2E3457E /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
-		23F8940316F203D28ECE629B /* BEMSimpleLineGraphView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMSimpleLineGraphView.m; path = Classes/BEMSimpleLineGraphView.m; sourceTree = "<group>"; };
-		2E1D46F88D7E4F0A601E1BC6 /* Pods-MyoHackProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyoHackProject-umbrella.h"; sourceTree = "<group>"; };
-		30CDD78BA24AEE0C217F4BEE /* BEMCircle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMCircle.m; path = Classes/BEMCircle.m; sourceTree = "<group>"; };
-		3736FABB61BAE77BF56B63E9 /* BEMCircle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMCircle.h; path = Classes/BEMCircle.h; sourceTree = "<group>"; };
-		3CDC2BB08FBD1C91F7FCCDF7 /* Pods-MyoHackProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyoHackProject-acknowledgements.plist"; sourceTree = "<group>"; };
-		42360A3928379D7C295128EA /* BEMAverageLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMAverageLine.h; path = Classes/BEMAverageLine.h; sourceTree = "<group>"; };
-		45ECC3DDF00445BB1F8E62D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		48A655981A3E6006747DAC70 /* Pods-MyoHackProject-BEMSimpleLineGraph-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyoHackProject-BEMSimpleLineGraph-dummy.m"; sourceTree = "<group>"; };
-		4B5E5D1121AD85905262D370 /* Pods-MyoHackProject-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyoHackProject-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
-		5164BFA46C781555E19CE2D7 /* Pods-MyoHackProject-BEMSimpleLineGraph-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyoHackProject-BEMSimpleLineGraph-umbrella.h"; sourceTree = "<group>"; };
-		5B9CE75167F708930A0600BE /* Pods-MyoHackProject-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyoHackProject-Alamofire.modulemap"; sourceTree = "<group>"; };
-		7ECAD1EA62E0584C99DD7E75 /* Pods-MyoHackProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyoHackProject.modulemap"; sourceTree = "<group>"; };
-		7F8B7D156B1FE9F84E4A04CD /* BEMSimpleLineGraphView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMSimpleLineGraphView.h; path = Classes/BEMSimpleLineGraphView.h; sourceTree = "<group>"; };
-		8013C793907A049D43886438 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8249E1E69A0BC12E0964E868 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		89AD43D61BD7DBE1ED9CD816 /* Pods-MyoHackProject-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyoHackProject-Alamofire.xcconfig"; sourceTree = "<group>"; };
-		8D21A454C1AACA61FB29C362 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8DE8419A9287FF373E15FA03 /* BEMLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMLine.m; path = Classes/BEMLine.m; sourceTree = "<group>"; };
-		97D4F0F792E475E81A69AC32 /* Pods-MyoHackProject-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyoHackProject-Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		9A8435C038A033AC7A94E617 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
-		9C94B54B5BAF44CDADECDCD5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5292340C71D3D01FDBCBBDD /* Pods-MyoHackProject-BEMSimpleLineGraph-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyoHackProject-BEMSimpleLineGraph-prefix.pch"; sourceTree = "<group>"; };
-		A7BEC9B3073D571308A16211 /* BEMPermanentPopupView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMPermanentPopupView.m; path = Classes/BEMPermanentPopupView.m; sourceTree = "<group>"; };
-		AC3150D822544C0BB2D90830 /* Pods-MyoHackProject-BEMSimpleLineGraph-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyoHackProject-BEMSimpleLineGraph-Private.xcconfig"; sourceTree = "<group>"; };
-		AC5E5924BBC736CF45057808 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		B0D119182AFB6CD66F367FB7 /* Pods-MyoHackProject-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyoHackProject-environment.h"; sourceTree = "<group>"; };
-		B930B3515E1FA518D628ACC1 /* BEMSimpleLineGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BEMSimpleLineGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB33971DAF6BC3403DF2EE38 /* Pods-MyoHackProject-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyoHackProject-Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		BD2358F6B994E33D552B71DF /* BEMLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMLine.h; path = Classes/BEMLine.h; sourceTree = "<group>"; };
-		BE7EF4AE84917BC835451EA5 /* Pods-MyoHackProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyoHackProject-dummy.m"; sourceTree = "<group>"; };
-		C0E61904FC60F9F3D9DC4A56 /* Pods-MyoHackProject-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyoHackProject-Alamofire-dummy.m"; sourceTree = "<group>"; };
-		C64C3D577D5D6878544A693A /* Pods-MyoHackProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyoHackProject-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DA98911DE8F2CA0377468198 /* Pods-MyoHackProject-BEMSimpleLineGraph.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyoHackProject-BEMSimpleLineGraph.modulemap"; sourceTree = "<group>"; };
-		DAE200D4A8FA9DF011766ECA /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
-		DB928B55DFD8ABCE8A10ED76 /* Pods-MyoHackProject-BEMSimpleLineGraph.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyoHackProject-BEMSimpleLineGraph.xcconfig"; sourceTree = "<group>"; };
-		E1E8DDA53A848211B9A8292B /* BEMPermanentPopupView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMPermanentPopupView.h; path = Classes/BEMPermanentPopupView.h; sourceTree = "<group>"; };
-		E2B2D28564A281ED958957F4 /* Pods-MyoHackProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyoHackProject.release.xcconfig"; sourceTree = "<group>"; };
-		EBE612A11E46353BD987B6EC /* Pods-MyoHackProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyoHackProject.debug.xcconfig"; sourceTree = "<group>"; };
-		F0929A0900E8250A048432BA /* Pods-MyoHackProject-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyoHackProject-resources.sh"; sourceTree = "<group>"; };
-		F34981C954C59D30192647A3 /* Pods-MyoHackProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyoHackProject-frameworks.sh"; sourceTree = "<group>"; };
-		F57C03F00FB1BEE0DA4A7E2C /* BEMAverageLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMAverageLine.m; path = Classes/BEMAverageLine.m; sourceTree = "<group>"; };
+		0E561F120D50DF98ABBB3379 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		174830E2C1BBF6AEE7BAF96F /* Pods-MyoHackProject-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyoHackProject-Alamofire.modulemap"; sourceTree = "<group>"; };
+		1752C3BC4C94E602F3C22379 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		1EE0FF68BE133FD152184C55 /* Pods-MyoHackProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyoHackProject-dummy.m"; sourceTree = "<group>"; };
+		236286B42A973867C1B99F50 /* Pods-MyoHackProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyoHackProject.debug.xcconfig"; sourceTree = "<group>"; };
+		2B191EAB42C6084210845673 /* Pods-MyoHackProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyoHackProject.modulemap"; sourceTree = "<group>"; };
+		34B237AC0E8E8BC1B9AD8863 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3B5AADFBB751895AE2323302 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CAB7645726B5146F19F01CC /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		3DF2384DD8D6FCD15C852409 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		52FF088B2F0522F8589F8A07 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		57B13225512D3C162F1E0D5E /* Pods-MyoHackProject-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyoHackProject-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		683D98D61C88686F0B15FD3F /* Pods-MyoHackProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyoHackProject.release.xcconfig"; sourceTree = "<group>"; };
+		6AADDB6F89C2505ACFA7F284 /* Pods-MyoHackProject-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyoHackProject-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		7261CD226616211735B39750 /* Pods-MyoHackProject-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyoHackProject-environment.h"; sourceTree = "<group>"; };
+		74D0A968973EC9A71E709956 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		7953E6AD4552A292FCDCDD93 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		86140AB05EDF47C742FCD37E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A35C0011731B3715AD39D449 /* Pods-MyoHackProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyoHackProject-umbrella.h"; sourceTree = "<group>"; };
+		A4CF7D787CDF306629788B5A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3137CDD4B7EEA9DD8A5698D /* Pods_MyoHackProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyoHackProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B8E9694C536B64C90286FE /* Pods-MyoHackProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyoHackProject-acknowledgements.plist"; sourceTree = "<group>"; };
+		CB5D30BB4E1FCEC64C1AF080 /* Pods-MyoHackProject-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyoHackProject-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		CF2365E1E031C880BC4F754D /* Pods-MyoHackProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyoHackProject-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D406FB625226C30E9CA2F22A /* Pods-MyoHackProject-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyoHackProject-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
+		D8ADC78910AD1C021F12474E /* Pods-MyoHackProject-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyoHackProject-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		E579E0AFEEB06BAC1309C4BA /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		E7BA20A384A3668C49434398 /* Pods-MyoHackProject-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyoHackProject-resources.sh"; sourceTree = "<group>"; };
+		EA6139BC1315DE05062B7D5F /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		F686A3E51D522147B43F92E5 /* Pods-MyoHackProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyoHackProject-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		57190729D10BADB7811BBE72 /* Frameworks */ = {
+		4FC5571B9CF6C11E722C0B38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8166D0DB8715C1351FBBE09E /* Foundation.framework in Frameworks */,
+				2247D1AF7189BC87A306CDF5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9282F2C1F20902256BD17CA1 /* Frameworks */ = {
+		AB93C005EF3D0D9B5C2E9755 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA07B6C9B92A60B52297258C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E63F3332576DC3064BA5B58E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				133E52602E678F8313016F42 /* Foundation.framework in Frameworks */,
+				5825FF78F5CDD6C8F78B58ED /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C1A8198070082BDFE8CE103 /* Frameworks */ = {
+		103F0B47242304B9E498EC40 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				59B8EA5EFCDA7FE8AF9418B7 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1E32E85E6CC9190DCDC5AD82 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8013C793907A049D43886438 /* Info.plist */,
-				DA98911DE8F2CA0377468198 /* Pods-MyoHackProject-BEMSimpleLineGraph.modulemap */,
-				DB928B55DFD8ABCE8A10ED76 /* Pods-MyoHackProject-BEMSimpleLineGraph.xcconfig */,
-				AC3150D822544C0BB2D90830 /* Pods-MyoHackProject-BEMSimpleLineGraph-Private.xcconfig */,
-				48A655981A3E6006747DAC70 /* Pods-MyoHackProject-BEMSimpleLineGraph-dummy.m */,
-				A5292340C71D3D01FDBCBBDD /* Pods-MyoHackProject-BEMSimpleLineGraph-prefix.pch */,
-				5164BFA46C781555E19CE2D7 /* Pods-MyoHackProject-BEMSimpleLineGraph-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-MyoHackProject-BEMSimpleLineGraph";
-			sourceTree = "<group>";
-		};
-		1FF6D6D3C2EAF070D3C99645 /* BEMSimpleLineGraph */ = {
-			isa = PBXGroup;
-			children = (
-				42360A3928379D7C295128EA /* BEMAverageLine.h */,
-				F57C03F00FB1BEE0DA4A7E2C /* BEMAverageLine.m */,
-				3736FABB61BAE77BF56B63E9 /* BEMCircle.h */,
-				30CDD78BA24AEE0C217F4BEE /* BEMCircle.m */,
-				BD2358F6B994E33D552B71DF /* BEMLine.h */,
-				8DE8419A9287FF373E15FA03 /* BEMLine.m */,
-				E1E8DDA53A848211B9A8292B /* BEMPermanentPopupView.h */,
-				A7BEC9B3073D571308A16211 /* BEMPermanentPopupView.m */,
-				7F8B7D156B1FE9F84E4A04CD /* BEMSimpleLineGraphView.h */,
-				23F8940316F203D28ECE629B /* BEMSimpleLineGraphView.m */,
-				1E32E85E6CC9190DCDC5AD82 /* Support Files */,
-			);
-			path = BEMSimpleLineGraph;
-			sourceTree = "<group>";
-		};
-		47CAFF698A8BDC7216EE3FFF /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5322916206D052F88B4CF8E9 /* Pods-MyoHackProject */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		5053794123EE343131847226 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9C94B54B5BAF44CDADECDCD5 /* Info.plist */,
-				5B9CE75167F708930A0600BE /* Pods-MyoHackProject-Alamofire.modulemap */,
-				89AD43D61BD7DBE1ED9CD816 /* Pods-MyoHackProject-Alamofire.xcconfig */,
-				4B5E5D1121AD85905262D370 /* Pods-MyoHackProject-Alamofire-Private.xcconfig */,
-				C0E61904FC60F9F3D9DC4A56 /* Pods-MyoHackProject-Alamofire-dummy.m */,
-				97D4F0F792E475E81A69AC32 /* Pods-MyoHackProject-Alamofire-prefix.pch */,
-				BB33971DAF6BC3403DF2EE38 /* Pods-MyoHackProject-Alamofire-umbrella.h */,
+				3B5AADFBB751895AE2323302 /* Info.plist */,
+				174830E2C1BBF6AEE7BAF96F /* Pods-MyoHackProject-Alamofire.modulemap */,
+				D8ADC78910AD1C021F12474E /* Pods-MyoHackProject-Alamofire.xcconfig */,
+				D406FB625226C30E9CA2F22A /* Pods-MyoHackProject-Alamofire-Private.xcconfig */,
+				6AADDB6F89C2505ACFA7F284 /* Pods-MyoHackProject-Alamofire-dummy.m */,
+				57B13225512D3C162F1E0D5E /* Pods-MyoHackProject-Alamofire-prefix.pch */,
+				CB5D30BB4E1FCEC64C1AF080 /* Pods-MyoHackProject-Alamofire-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-MyoHackProject-Alamofire";
 			sourceTree = "<group>";
 		};
-		5322916206D052F88B4CF8E9 /* Pods-MyoHackProject */ = {
+		1465254C7563A4BEE19C74CE /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				8D21A454C1AACA61FB29C362 /* Info.plist */,
-				7ECAD1EA62E0584C99DD7E75 /* Pods-MyoHackProject.modulemap */,
-				C64C3D577D5D6878544A693A /* Pods-MyoHackProject-acknowledgements.markdown */,
-				3CDC2BB08FBD1C91F7FCCDF7 /* Pods-MyoHackProject-acknowledgements.plist */,
-				BE7EF4AE84917BC835451EA5 /* Pods-MyoHackProject-dummy.m */,
-				B0D119182AFB6CD66F367FB7 /* Pods-MyoHackProject-environment.h */,
-				F34981C954C59D30192647A3 /* Pods-MyoHackProject-frameworks.sh */,
-				F0929A0900E8250A048432BA /* Pods-MyoHackProject-resources.sh */,
-				2E1D46F88D7E4F0A601E1BC6 /* Pods-MyoHackProject-umbrella.h */,
-				EBE612A11E46353BD987B6EC /* Pods-MyoHackProject.debug.xcconfig */,
-				E2B2D28564A281ED958957F4 /* Pods-MyoHackProject.release.xcconfig */,
+				3CAB7645726B5146F19F01CC /* Alamofire.swift */,
+				E579E0AFEEB06BAC1309C4BA /* Download.swift */,
+				EA6139BC1315DE05062B7D5F /* Manager.swift */,
+				1752C3BC4C94E602F3C22379 /* ParameterEncoding.swift */,
+				7953E6AD4552A292FCDCDD93 /* Request.swift */,
+				3DF2384DD8D6FCD15C852409 /* ResponseSerialization.swift */,
+				52FF088B2F0522F8589F8A07 /* Upload.swift */,
+				74D0A968973EC9A71E709956 /* Validation.swift */,
+				103F0B47242304B9E498EC40 /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		2C94BC0F2F37D57DB8416BB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1465254C7563A4BEE19C74CE /* Alamofire */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3929B5B82DD1E7DE053CA244 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67CD845499FFB87710A8F23D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3ECC9AE667FE94A073D3D312 /* Pods-MyoHackProject */ = {
+			isa = PBXGroup;
+			children = (
+				A4CF7D787CDF306629788B5A /* Info.plist */,
+				2B191EAB42C6084210845673 /* Pods-MyoHackProject.modulemap */,
+				CF2365E1E031C880BC4F754D /* Pods-MyoHackProject-acknowledgements.markdown */,
+				C7B8E9694C536B64C90286FE /* Pods-MyoHackProject-acknowledgements.plist */,
+				1EE0FF68BE133FD152184C55 /* Pods-MyoHackProject-dummy.m */,
+				7261CD226616211735B39750 /* Pods-MyoHackProject-environment.h */,
+				F686A3E51D522147B43F92E5 /* Pods-MyoHackProject-frameworks.sh */,
+				E7BA20A384A3668C49434398 /* Pods-MyoHackProject-resources.sh */,
+				A35C0011731B3715AD39D449 /* Pods-MyoHackProject-umbrella.h */,
+				236286B42A973867C1B99F50 /* Pods-MyoHackProject.debug.xcconfig */,
+				683D98D61C88686F0B15FD3F /* Pods-MyoHackProject.release.xcconfig */,
 			);
 			name = "Pods-MyoHackProject";
 			path = "Target Support Files/Pods-MyoHackProject";
 			sourceTree = "<group>";
 		};
-		59B8EA5EFCDA7FE8AF9418B7 /* iOS */ = {
+		67CD845499FFB87710A8F23D /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				45ECC3DDF00445BB1F8E62D8 /* Foundation.framework */,
+				34B237AC0E8E8BC1B9AD8863 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5F6B36D5F01628AA7BEC6E41 /* Alamofire */ = {
+		6990E23C0B500802C701A499 = {
 			isa = PBXGroup;
 			children = (
-				AC5E5924BBC736CF45057808 /* Alamofire.swift */,
-				15D1F90B3E2BD2D4B2E3457E /* Download.swift */,
-				DAE200D4A8FA9DF011766ECA /* Manager.swift */,
-				0C43750370BC6F9FA56E55C6 /* ParameterEncoding.swift */,
-				14B33ABF5DB7E6F1A99A0589 /* Request.swift */,
-				005A9D0DDF3F69F65DE83F82 /* ResponseSerialization.swift */,
-				9A8435C038A033AC7A94E617 /* Upload.swift */,
-				0995116E99143C4AA29EBB03 /* Validation.swift */,
-				5053794123EE343131847226 /* Support Files */,
+				0E561F120D50DF98ABBB3379 /* Podfile */,
+				3929B5B82DD1E7DE053CA244 /* Frameworks */,
+				2C94BC0F2F37D57DB8416BB8 /* Pods */,
+				7FE87E3FF9CD9D7F26749834 /* Products */,
+				A39410AE041DCD20D3183143 /* Targets Support Files */,
 			);
-			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		697FDF1C465A90FF643425C3 /* Pods */ = {
+		7FE87E3FF9CD9D7F26749834 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F6B36D5F01628AA7BEC6E41 /* Alamofire */,
-				1FF6D6D3C2EAF070D3C99645 /* BEMSimpleLineGraph */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9C552DA834E3282126E751DB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1390F0B2C416AD0B7AC3CAF3 /* Alamofire.framework */,
-				B930B3515E1FA518D628ACC1 /* BEMSimpleLineGraph.framework */,
-				02B36049218970E856E64DB0 /* Pods_MyoHackProject.framework */,
+				86140AB05EDF47C742FCD37E /* Alamofire.framework */,
+				C3137CDD4B7EEA9DD8A5698D /* Pods_MyoHackProject.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E9D7C1264B40C679CFDFBA89 = {
+		A39410AE041DCD20D3183143 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8249E1E69A0BC12E0964E868 /* Podfile */,
-				1C1A8198070082BDFE8CE103 /* Frameworks */,
-				697FDF1C465A90FF643425C3 /* Pods */,
-				9C552DA834E3282126E751DB /* Products */,
-				47CAFF698A8BDC7216EE3FFF /* Targets Support Files */,
+				3ECC9AE667FE94A073D3D312 /* Pods-MyoHackProject */,
 			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		38AC83350D75B1F66D5AFC4B /* Headers */ = {
+		04E3DD23C456AA2A2ACC59B7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				862EF43E192455D0ABB4A041 /* BEMAverageLine.h in Headers */,
-				B5098FD63E6A88CC52A81A9D /* BEMCircle.h in Headers */,
-				6BCB7ADCA35C7FBEE2C7C1AA /* BEMLine.h in Headers */,
-				F5E9AC49093AE3D7728C8D68 /* BEMPermanentPopupView.h in Headers */,
-				97FA7FD7DD70F2ACAB2EA6E4 /* BEMSimpleLineGraphView.h in Headers */,
-				EA46B9D7A0CED9BC40312855 /* Pods-MyoHackProject-BEMSimpleLineGraph-umbrella.h in Headers */,
+				629C4E950405064D540E544A /* Pods-MyoHackProject-Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD8B4914E62A634E03C8A7B4 /* Headers */ = {
+		7C210AE21E89687D11BF2B92 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C0028CFE737D3AC70B88C15 /* Pods-MyoHackProject-Alamofire-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F062BEEC14AE4397C5FEE620 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B0805C6ACEE2481E28C96988 /* Pods-MyoHackProject-umbrella.h in Headers */,
+				DA10122117D8825346033294 /* Pods-MyoHackProject-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6B435E7600EA67ECB04D6685 /* Pods-MyoHackProject-BEMSimpleLineGraph */ = {
+		5C15FBDAEDA1D5FC554B0886 /* Pods-MyoHackProject-Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC5CF1BCF4B46E5D6AD84AF6 /* Build configuration list for PBXNativeTarget "Pods-MyoHackProject-BEMSimpleLineGraph" */;
+			buildConfigurationList = EA11308F7FF82F42F04F45F0 /* Build configuration list for PBXNativeTarget "Pods-MyoHackProject-Alamofire" */;
 			buildPhases = (
-				FA3F6879105A6D65E77B148F /* Sources */,
-				57190729D10BADB7811BBE72 /* Frameworks */,
-				38AC83350D75B1F66D5AFC4B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-MyoHackProject-BEMSimpleLineGraph";
-			productName = "Pods-MyoHackProject-BEMSimpleLineGraph";
-			productReference = B930B3515E1FA518D628ACC1 /* BEMSimpleLineGraph.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E2989DDBE1DCF82CB1CBF6D8 /* Pods-MyoHackProject */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FE750B7A4A372312EB74C6DC /* Build configuration list for PBXNativeTarget "Pods-MyoHackProject" */;
-			buildPhases = (
-				61F58FDE6CDD7986B209A470 /* Sources */,
-				E63F3332576DC3064BA5B58E /* Frameworks */,
-				F062BEEC14AE4397C5FEE620 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5A0CD580E7113395DB8D924A /* PBXTargetDependency */,
-				3B6A8C69626C4C6073D07460 /* PBXTargetDependency */,
-			);
-			name = "Pods-MyoHackProject";
-			productName = "Pods-MyoHackProject";
-			productReference = 02B36049218970E856E64DB0 /* Pods_MyoHackProject.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FCD45F3CCB281EBC7B029CB6 /* Pods-MyoHackProject-Alamofire */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CAAA65A62060F05CEC396863 /* Build configuration list for PBXNativeTarget "Pods-MyoHackProject-Alamofire" */;
-			buildPhases = (
-				32110CE765FECA61E71EDC7E /* Sources */,
-				9282F2C1F20902256BD17CA1 /* Frameworks */,
-				AD8B4914E62A634E03C8A7B4 /* Headers */,
+				43C116B30942A2AE70D80D2A /* Sources */,
+				AB93C005EF3D0D9B5C2E9755 /* Frameworks */,
+				04E3DD23C456AA2A2ACC59B7 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -354,177 +224,91 @@
 			);
 			name = "Pods-MyoHackProject-Alamofire";
 			productName = "Pods-MyoHackProject-Alamofire";
-			productReference = 1390F0B2C416AD0B7AC3CAF3 /* Alamofire.framework */;
+			productReference = 86140AB05EDF47C742FCD37E /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A2235E74D810FB590BFD57D7 /* Pods-MyoHackProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07A35463A69BCB4B33A56043 /* Build configuration list for PBXNativeTarget "Pods-MyoHackProject" */;
+			buildPhases = (
+				43EDEC9923124879C7311C8F /* Sources */,
+				4FC5571B9CF6C11E722C0B38 /* Frameworks */,
+				7C210AE21E89687D11BF2B92 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CC986DD8BD3018D8FF6197A /* PBXTargetDependency */,
+			);
+			name = "Pods-MyoHackProject";
+			productName = "Pods-MyoHackProject";
+			productReference = C3137CDD4B7EEA9DD8A5698D /* Pods_MyoHackProject.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2577994A785A7B977833E81C /* Project object */ = {
+		9DBE27B9B22D9AD45054358B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 680F4E85CD03FFC9ADE68EFA /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 51AE9E10EDFCF33EC9CD6706 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = E9D7C1264B40C679CFDFBA89;
-			productRefGroup = 9C552DA834E3282126E751DB /* Products */;
+			mainGroup = 6990E23C0B500802C701A499;
+			productRefGroup = 7FE87E3FF9CD9D7F26749834 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E2989DDBE1DCF82CB1CBF6D8 /* Pods-MyoHackProject */,
-				FCD45F3CCB281EBC7B029CB6 /* Pods-MyoHackProject-Alamofire */,
-				6B435E7600EA67ECB04D6685 /* Pods-MyoHackProject-BEMSimpleLineGraph */,
+				A2235E74D810FB590BFD57D7 /* Pods-MyoHackProject */,
+				5C15FBDAEDA1D5FC554B0886 /* Pods-MyoHackProject-Alamofire */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		32110CE765FECA61E71EDC7E /* Sources */ = {
+		43C116B30942A2AE70D80D2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9369A436E583E2E873766CD0 /* Alamofire.swift in Sources */,
-				219A5CC4307A4651717359CB /* Download.swift in Sources */,
-				2866771045509972CFD98ADD /* Manager.swift in Sources */,
-				9BC67CF740D54C3E1A1C421C /* ParameterEncoding.swift in Sources */,
-				7E6ECE1CF3101C56C6241F32 /* Pods-MyoHackProject-Alamofire-dummy.m in Sources */,
-				8EBCA293F8A2BE2772AA3846 /* Request.swift in Sources */,
-				609F7F143CBE35A29FE82694 /* ResponseSerialization.swift in Sources */,
-				B71A03C0F5203698379B8648 /* Upload.swift in Sources */,
-				9E52F339CB7975BB17E3CAA9 /* Validation.swift in Sources */,
+				3CEEC922D1825081AFF4506A /* Alamofire.swift in Sources */,
+				B72EE95BFB67D6D8F648F1BB /* Download.swift in Sources */,
+				130615E6D04F9FF9870E737E /* Manager.swift in Sources */,
+				81F14F34636A0E5117BFE98F /* ParameterEncoding.swift in Sources */,
+				CB933CDC3AC2089A1CDBEC29 /* Pods-MyoHackProject-Alamofire-dummy.m in Sources */,
+				5E348CD6BD8132BBEB7D0FFF /* Request.swift in Sources */,
+				5C6BF7B6510918D7DC80C2F5 /* ResponseSerialization.swift in Sources */,
+				E4E7166F19F6B197DAFDD6A7 /* Upload.swift in Sources */,
+				909AE77688BB803662AD8839 /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61F58FDE6CDD7986B209A470 /* Sources */ = {
+		43EDEC9923124879C7311C8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9574CF765D61271E252D489B /* Pods-MyoHackProject-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA3F6879105A6D65E77B148F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6FC6F690EACB5B823B268940 /* BEMAverageLine.m in Sources */,
-				2DA557ACBEBD764C18371C79 /* BEMCircle.m in Sources */,
-				2E50FADB46340E43C6F6EF14 /* BEMLine.m in Sources */,
-				93F9361673275F341018BD18 /* BEMPermanentPopupView.m in Sources */,
-				7C5EA331ADDEF5942BCD7F71 /* BEMSimpleLineGraphView.m in Sources */,
-				52BD3883C7BF6A99D41E38B3 /* Pods-MyoHackProject-BEMSimpleLineGraph-dummy.m in Sources */,
+				7C5310D88A727D8EC8EA709C /* Pods-MyoHackProject-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3B6A8C69626C4C6073D07460 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-MyoHackProject-BEMSimpleLineGraph";
-			target = 6B435E7600EA67ECB04D6685 /* Pods-MyoHackProject-BEMSimpleLineGraph */;
-			targetProxy = 9834FF9FA8DA67A9F24681AB /* PBXContainerItemProxy */;
-		};
-		5A0CD580E7113395DB8D924A /* PBXTargetDependency */ = {
+		3CC986DD8BD3018D8FF6197A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MyoHackProject-Alamofire";
-			target = FCD45F3CCB281EBC7B029CB6 /* Pods-MyoHackProject-Alamofire */;
-			targetProxy = F1AD2C323875935BA70FC586 /* PBXContainerItemProxy */;
+			target = 5C15FBDAEDA1D5FC554B0886 /* Pods-MyoHackProject-Alamofire */;
+			targetProxy = 1744A7F07304A526C4B193C0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		15FDCB65C183CB43D246701B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B5E5D1121AD85905262D370 /* Pods-MyoHackProject-Alamofire-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MyoHackProject-Alamofire/Pods-MyoHackProject-Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-MyoHackProject-Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-MyoHackProject-Alamofire/Pods-MyoHackProject-Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		16098DCEDE4E5DD07F8CB61E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC3150D822544C0BB2D90830 /* Pods-MyoHackProject-BEMSimpleLineGraph-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MyoHackProject-BEMSimpleLineGraph/Pods-MyoHackProject-BEMSimpleLineGraph-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-MyoHackProject-BEMSimpleLineGraph/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-MyoHackProject-BEMSimpleLineGraph/Pods-MyoHackProject-BEMSimpleLineGraph.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = BEMSimpleLineGraph;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		29067EAA71331601D5C1D79A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2B2D28564A281ED958957F4 /* Pods-MyoHackProject.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MyoHackProject/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-MyoHackProject/Pods-MyoHackProject.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_MyoHackProject;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3F8E380D86CED34767350A17 /* Release */ = {
+		3BF7CE8AD3F03D9E64F37136 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -558,9 +342,9 @@
 			};
 			name = Release;
 		};
-		43B5F95246878FBDC79A86C5 /* Debug */ = {
+		4B16B7F6C5144939523019D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC3150D822544C0BB2D90830 /* Pods-MyoHackProject-BEMSimpleLineGraph-Private.xcconfig */;
+			baseConfigurationReference = D406FB625226C30E9CA2F22A /* Pods-MyoHackProject-Alamofire-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -569,25 +353,26 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MyoHackProject-BEMSimpleLineGraph/Pods-MyoHackProject-BEMSimpleLineGraph-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-MyoHackProject-BEMSimpleLineGraph/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MyoHackProject-Alamofire/Pods-MyoHackProject-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyoHackProject-Alamofire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-MyoHackProject-BEMSimpleLineGraph/Pods-MyoHackProject-BEMSimpleLineGraph.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-MyoHackProject-Alamofire/Pods-MyoHackProject-Alamofire.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = BEMSimpleLineGraph;
+				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		87A13C4645344B0BB9FA4067 /* Release */ = {
+		5EE75CE2857FA10CA5CC6C3F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B5E5D1121AD85905262D370 /* Pods-MyoHackProject-Alamofire-Private.xcconfig */;
+			baseConfigurationReference = D406FB625226C30E9CA2F22A /* Pods-MyoHackProject-Alamofire-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -612,7 +397,7 @@
 			};
 			name = Release;
 		};
-		DCE53CA77D2FD4042F652F81 /* Debug */ = {
+		6B90543AC6D9A6A0DD52A2DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -651,9 +436,38 @@
 			};
 			name = Debug;
 		};
-		FCEC323A76CBBB688EB4B563 /* Debug */ = {
+		C3748FDAF8A3F81B1E1AD30F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBE612A11E46353BD987B6EC /* Pods-MyoHackProject.debug.xcconfig */;
+			baseConfigurationReference = 683D98D61C88686F0B15FD3F /* Pods-MyoHackProject.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MyoHackProject/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-MyoHackProject/Pods-MyoHackProject.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MyoHackProject;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E26DB22D1634A5CA7A21389A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 236286B42A973867C1B99F50 /* Pods-MyoHackProject.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -684,43 +498,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		680F4E85CD03FFC9ADE68EFA /* Build configuration list for PBXProject "Pods" */ = {
+		07A35463A69BCB4B33A56043 /* Build configuration list for PBXNativeTarget "Pods-MyoHackProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DCE53CA77D2FD4042F652F81 /* Debug */,
-				3F8E380D86CED34767350A17 /* Release */,
+				E26DB22D1634A5CA7A21389A /* Debug */,
+				C3748FDAF8A3F81B1E1AD30F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CAAA65A62060F05CEC396863 /* Build configuration list for PBXNativeTarget "Pods-MyoHackProject-Alamofire" */ = {
+		51AE9E10EDFCF33EC9CD6706 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				15FDCB65C183CB43D246701B /* Debug */,
-				87A13C4645344B0BB9FA4067 /* Release */,
+				6B90543AC6D9A6A0DD52A2DD /* Debug */,
+				3BF7CE8AD3F03D9E64F37136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC5CF1BCF4B46E5D6AD84AF6 /* Build configuration list for PBXNativeTarget "Pods-MyoHackProject-BEMSimpleLineGraph" */ = {
+		EA11308F7FF82F42F04F45F0 /* Build configuration list for PBXNativeTarget "Pods-MyoHackProject-Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				43B5F95246878FBDC79A86C5 /* Debug */,
-				16098DCEDE4E5DD07F8CB61E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FE750B7A4A372312EB74C6DC /* Build configuration list for PBXNativeTarget "Pods-MyoHackProject" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FCEC323A76CBBB688EB4B563 /* Debug */,
-				29067EAA71331601D5C1D79A /* Release */,
+				4B16B7F6C5144939523019D1 /* Debug */,
+				5EE75CE2857FA10CA5CC6C3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2577994A785A7B977833E81C /* Project object */;
+	rootObject = 9DBE27B9B22D9AD45054358B /* Project object */;
 }

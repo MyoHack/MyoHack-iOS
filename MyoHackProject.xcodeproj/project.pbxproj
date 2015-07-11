@@ -15,6 +15,11 @@
 		BDE5425E1B51797A0091DF0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDE5425C1B51797A0091DF0D /* LaunchScreen.xib */; };
 		BDE5426A1B51797B0091DF0D /* MyoHackProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE542691B51797B0091DF0D /* MyoHackProjectTests.swift */; };
 		BDE542761B517E0E0091DF0D /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE542751B517E0E0091DF0D /* MyoKit.framework */; };
+		BDF98CFB1B51A71200928E45 /* BEMAverageLine.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF98CF21B51A71200928E45 /* BEMAverageLine.m */; };
+		BDF98CFC1B51A71200928E45 /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF98CF41B51A71200928E45 /* BEMCircle.m */; };
+		BDF98CFD1B51A71200928E45 /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF98CF61B51A71200928E45 /* BEMLine.m */; };
+		BDF98CFE1B51A71200928E45 /* BEMPermanentPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF98CF81B51A71200928E45 /* BEMPermanentPopupView.m */; };
+		BDF98CFF1B51A71200928E45 /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF98CFA1B51A71200928E45 /* BEMSimpleLineGraphView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +48,16 @@
 		BDE542691B51797B0091DF0D /* MyoHackProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyoHackProjectTests.swift; sourceTree = "<group>"; };
 		BDE542751B517E0E0091DF0D /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyoKit.framework; sourceTree = "<group>"; };
 		BDE542771B517EF10091DF0D /* MyoHackProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyoHackProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		BDF98CF11B51A71200928E45 /* BEMAverageLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAverageLine.h; sourceTree = "<group>"; };
+		BDF98CF21B51A71200928E45 /* BEMAverageLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAverageLine.m; sourceTree = "<group>"; };
+		BDF98CF31B51A71200928E45 /* BEMCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCircle.h; sourceTree = "<group>"; };
+		BDF98CF41B51A71200928E45 /* BEMCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCircle.m; sourceTree = "<group>"; };
+		BDF98CF51B51A71200928E45 /* BEMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMLine.h; sourceTree = "<group>"; };
+		BDF98CF61B51A71200928E45 /* BEMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMLine.m; sourceTree = "<group>"; };
+		BDF98CF71B51A71200928E45 /* BEMPermanentPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPermanentPopupView.h; sourceTree = "<group>"; };
+		BDF98CF81B51A71200928E45 /* BEMPermanentPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPermanentPopupView.m; sourceTree = "<group>"; };
+		BDF98CF91B51A71200928E45 /* BEMSimpleLineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMSimpleLineGraphView.h; sourceTree = "<group>"; };
+		BDF98CFA1B51A71200928E45 /* BEMSimpleLineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMSimpleLineGraphView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +112,7 @@
 		BDE542501B51797A0091DF0D /* MyoHackProject */ = {
 			isa = PBXGroup;
 			children = (
+				BDF98CF01B51A6EF00928E45 /* Graphing */,
 				BDE542531B51797A0091DF0D /* AppDelegate.swift */,
 				BDE542551B51797A0091DF0D /* ViewController.swift */,
 				BDE542571B51797A0091DF0D /* Main.storyboard */,
@@ -131,6 +147,23 @@
 				BDE542681B51797B0091DF0D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BDF98CF01B51A6EF00928E45 /* Graphing */ = {
+			isa = PBXGroup;
+			children = (
+				BDF98CF11B51A71200928E45 /* BEMAverageLine.h */,
+				BDF98CF21B51A71200928E45 /* BEMAverageLine.m */,
+				BDF98CF31B51A71200928E45 /* BEMCircle.h */,
+				BDF98CF41B51A71200928E45 /* BEMCircle.m */,
+				BDF98CF51B51A71200928E45 /* BEMLine.h */,
+				BDF98CF61B51A71200928E45 /* BEMLine.m */,
+				BDF98CF71B51A71200928E45 /* BEMPermanentPopupView.h */,
+				BDF98CF81B51A71200928E45 /* BEMPermanentPopupView.m */,
+				BDF98CF91B51A71200928E45 /* BEMSimpleLineGraphView.h */,
+				BDF98CFA1B51A71200928E45 /* BEMSimpleLineGraphView.m */,
+			);
+			name = Graphing;
 			sourceTree = "<group>";
 		};
 		FB9F1ABC253C6D1F65994339 /* Frameworks */ = {
@@ -293,7 +326,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDF98CFF1B51A71200928E45 /* BEMSimpleLineGraphView.m in Sources */,
+				BDF98CFD1B51A71200928E45 /* BEMLine.m in Sources */,
+				BDF98CFC1B51A71200928E45 /* BEMCircle.m in Sources */,
 				BDE542561B51797A0091DF0D /* ViewController.swift in Sources */,
+				BDF98CFE1B51A71200928E45 /* BEMPermanentPopupView.m in Sources */,
+				BDF98CFB1B51A71200928E45 /* BEMAverageLine.m in Sources */,
 				BDE542541B51797A0091DF0D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

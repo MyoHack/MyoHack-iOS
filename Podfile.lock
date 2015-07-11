@@ -1,13 +1,10 @@
 PODS:
   - Alamofire (1.2.3)
-  - BEMSimpleLineGraph (4.0)
 
 DEPENDENCIES:
   - Alamofire (~> 1.2)
-  - BEMSimpleLineGraph
 
 SPEC CHECKSUMS:
   Alamofire: 5550bf0b575ed1a4bf9be572f9463e1015cc169e
-  BEMSimpleLineGraph: e706c36c6e7944f6424285478a914d4adb178f92
 
 COCOAPODS: 0.36.4
