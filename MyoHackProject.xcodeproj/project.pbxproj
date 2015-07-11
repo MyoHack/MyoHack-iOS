@@ -15,6 +15,7 @@
 		BDE5425E1B51797A0091DF0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDE5425C1B51797A0091DF0D /* LaunchScreen.xib */; };
 		BDE5426A1B51797B0091DF0D /* MyoHackProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE542691B51797B0091DF0D /* MyoHackProjectTests.swift */; };
 		BDE542761B517E0E0091DF0D /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE542751B517E0E0091DF0D /* MyoKit.framework */; };
+		E5C624381B51987400B48141 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C624371B51987400B48141 /* LineChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		BDE542691B51797B0091DF0D /* MyoHackProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyoHackProjectTests.swift; sourceTree = "<group>"; };
 		BDE542751B517E0E0091DF0D /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyoKit.framework; sourceTree = "<group>"; };
 		BDE542771B517EF10091DF0D /* MyoHackProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyoHackProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		E5C624371B51987400B48141 /* LineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				BDE542531B51797A0091DF0D /* AppDelegate.swift */,
 				BDE542551B51797A0091DF0D /* ViewController.swift */,
+				E5C624371B51987400B48141 /* LineChart.swift */,
 				BDE542571B51797A0091DF0D /* Main.storyboard */,
 				BDE5425A1B51797A0091DF0D /* Images.xcassets */,
 				BDE5425C1B51797A0091DF0D /* LaunchScreen.xib */,
@@ -295,6 +298,7 @@
 			files = (
 				BDE542561B51797A0091DF0D /* ViewController.swift in Sources */,
 				BDE542541B51797A0091DF0D /* AppDelegate.swift in Sources */,
+				E5C624381B51987400B48141 /* LineChart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
