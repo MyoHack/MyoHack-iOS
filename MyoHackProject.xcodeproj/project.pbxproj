@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDE542541B51797A0091DF0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE542531B51797A0091DF0D /* AppDelegate.swift */; };
+		BDE542561B51797A0091DF0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE542551B51797A0091DF0D /* ViewController.swift */; };
+		BDE542591B51797A0091DF0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE542571B51797A0091DF0D /* Main.storyboard */; };
+		BDE5425B1B51797A0091DF0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE5425A1B51797A0091DF0D /* Images.xcassets */; };
+		BDE5425E1B51797A0091DF0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDE5425C1B51797A0091DF0D /* LaunchScreen.xib */; };
+		BDE5426A1B51797B0091DF0D /* MyoHackProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE542691B51797B0091DF0D /* MyoHackProjectTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDE542641B51797B0091DF0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDE542461B51797A0091DF0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDE5424D1B51797A0091DF0D;
+			remoteInfo = MyoHackProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BDE5424E1B51797A0091DF0D /* MyoHackProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyoHackProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE542521B51797A0091DF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDE542531B51797A0091DF0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDE542551B51797A0091DF0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDE542581B51797A0091DF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDE5425A1B51797A0091DF0D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BDE5425D1B51797A0091DF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BDE542631B51797B0091DF0D /* MyoHackProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyoHackProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE542681B51797B0091DF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDE542691B51797B0091DF0D /* MyoHackProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyoHackProjectTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDE5424B1B51797A0091DF0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE542601B51797B0091DF0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDE542451B51797A0091DF0D = {
+			isa = PBXGroup;
+			children = (
+				BDE542501B51797A0091DF0D /* MyoHackProject */,
+				BDE542661B51797B0091DF0D /* MyoHackProjectTests */,
+				BDE5424F1B51797A0091DF0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDE5424F1B51797A0091DF0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDE5424E1B51797A0091DF0D /* MyoHackProject.app */,
+				BDE542631B51797B0091DF0D /* MyoHackProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDE542501B51797A0091DF0D /* MyoHackProject */ = {
+			isa = PBXGroup;
+			children = (
+				BDE542531B51797A0091DF0D /* AppDelegate.swift */,
+				BDE542551B51797A0091DF0D /* ViewController.swift */,
+				BDE542571B51797A0091DF0D /* Main.storyboard */,
+				BDE5425A1B51797A0091DF0D /* Images.xcassets */,
+				BDE5425C1B51797A0091DF0D /* LaunchScreen.xib */,
+				BDE542511B51797A0091DF0D /* Supporting Files */,
+			);
+			path = MyoHackProject;
+			sourceTree = "<group>";
+		};
+		BDE542511B51797A0091DF0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDE542521B51797A0091DF0D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BDE542661B51797B0091DF0D /* MyoHackProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDE542691B51797B0091DF0D /* MyoHackProjectTests.swift */,
+				BDE542671B51797B0091DF0D /* Supporting Files */,
+			);
+			path = MyoHackProjectTests;
+			sourceTree = "<group>";
+		};
+		BDE542671B51797B0091DF0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDE542681B51797B0091DF0D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDE5424D1B51797A0091DF0D /* MyoHackProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDE5426D1B51797B0091DF0D /* Build configuration list for PBXNativeTarget "MyoHackProject" */;
+			buildPhases = (
+				BDE5424A1B51797A0091DF0D /* Sources */,
+				BDE5424B1B51797A0091DF0D /* Frameworks */,
+				BDE5424C1B51797A0091DF0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyoHackProject;
+			productName = MyoHackProject;
+			productReference = BDE5424E1B51797A0091DF0D /* MyoHackProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDE542621B51797B0091DF0D /* MyoHackProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDE542701B51797B0091DF0D /* Build configuration list for PBXNativeTarget "MyoHackProjectTests" */;
+			buildPhases = (
+				BDE5425F1B51797B0091DF0D /* Sources */,
+				BDE542601B51797B0091DF0D /* Frameworks */,
+				BDE542611B51797B0091DF0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDE542651B51797B0091DF0D /* PBXTargetDependency */,
+			);
+			name = MyoHackProjectTests;
+			productName = MyoHackProjectTests;
+			productReference = BDE542631B51797B0091DF0D /* MyoHackProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDE542461B51797A0091DF0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = MyoHack;
+				TargetAttributes = {
+					BDE5424D1B51797A0091DF0D = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					BDE542621B51797B0091DF0D = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = BDE5424D1B51797A0091DF0D;
+					};
+				};
+			};
+			buildConfigurationList = BDE542491B51797A0091DF0D /* Build configuration list for PBXProject "MyoHackProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDE542451B51797A0091DF0D;
+			productRefGroup = BDE5424F1B51797A0091DF0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDE5424D1B51797A0091DF0D /* MyoHackProject */,
+				BDE542621B51797B0091DF0D /* MyoHackProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDE5424C1B51797A0091DF0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE542591B51797A0091DF0D /* Main.storyboard in Resources */,
+				BDE5425E1B51797A0091DF0D /* LaunchScreen.xib in Resources */,
+				BDE5425B1B51797A0091DF0D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE542611B51797B0091DF0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDE5424A1B51797A0091DF0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE542561B51797A0091DF0D /* ViewController.swift in Sources */,
+				BDE542541B51797A0091DF0D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE5425F1B51797B0091DF0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE5426A1B51797B0091DF0D /* MyoHackProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDE542651B51797B0091DF0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDE5424D1B51797A0091DF0D /* MyoHackProject */;
+			targetProxy = BDE542641B51797B0091DF0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDE542571B51797A0091DF0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDE542581B51797A0091DF0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDE5425C1B51797A0091DF0D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDE5425D1B51797A0091DF0D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDE5426B1B51797B0091DF0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDE5426C1B51797B0091DF0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDE5426E1B51797B0091DF0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyoHackProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BDE5426F1B51797B0091DF0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyoHackProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BDE542711B51797B0091DF0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyoHackProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyoHackProject.app/MyoHackProject";
+			};
+			name = Debug;
+		};
+		BDE542721B51797B0091DF0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyoHackProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyoHackProject.app/MyoHackProject";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDE542491B51797A0091DF0D /* Build configuration list for PBXProject "MyoHackProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDE5426B1B51797B0091DF0D /* Debug */,
+				BDE5426C1B51797B0091DF0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDE5426D1B51797B0091DF0D /* Build configuration list for PBXNativeTarget "MyoHackProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDE5426E1B51797B0091DF0D /* Debug */,
+				BDE5426F1B51797B0091DF0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BDE542701B51797B0091DF0D /* Build configuration list for PBXNativeTarget "MyoHackProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDE542711B51797B0091DF0D /* Debug */,
+				BDE542721B51797B0091DF0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDE542461B51797A0091DF0D /* Project object */;
+}
