@@ -14,6 +14,9 @@ var yPoints : [CGFloat] = [0.0]
 var zPoints : [CGFloat] = [0.0]
 var wPoints : [CGFloat] = [0.0]
 
+var counter = 0
+var rightHitToggle = false
+
 var temp : [CGFloat] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 class ViewController: UIViewController, BEMSimpleLineGraphDataSource, BEMSimpleLineGraphDelegate {
@@ -23,6 +26,8 @@ class ViewController: UIViewController, BEMSimpleLineGraphDataSource, BEMSimpleL
     var zGraph : BEMSimpleLineGraphView!
     var wGraph : BEMSimpleLineGraphView!
     
+    let ws = WebSocket(url: "ws://45.55.88.179:3000/websocket")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,10 +36,15 @@ class ViewController: UIViewController, BEMSimpleLineGraphDataSource, BEMSimpleL
         zPoints = temp
         wPoints = temp
         
+        self.openSocket()
+        
         TLMHub.sharedHub().attachByIdentifier(myoIdentifier)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "didReceiveOrientationEvent:", name: TLMMyoDidReceiveOrientationEventNotification, object: nil)
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "didReceivePoseChange:", name: TLMMyoDidReceivePoseChangedNotification, object: nil)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "didReceiveGyroChange:", name: TLMMyoDidReceiveGyroscopeEventNotification, object: nil)
         
         xGraph = BEMSimpleLineGraphView(frame: CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height/4))
         yGraph = BEMSimpleLineGraphView(frame: CGRectMake(0, self.view.frame.size.height/4, self.view.frame.size.width, self.view.frame.size.height/4))
@@ -68,12 +78,59 @@ class ViewController: UIViewController, BEMSimpleLineGraphDataSource, BEMSimpleL
     
     func didReceiveOrientationEvent(notification: NSNotification) {
         var orientation = notification.userInfo![kTLMKeyOrientationEvent]! as! TLMOrientationEvent
-        
-        
-        
+       
         self.refreshGraph(orientation.quaternion)
         
+        /*
         println("\(orientation.quaternion.x), \(orientation.quaternion.y), \(orientation.quaternion.z), \(orientation.quaternion.w)")
+        */
+    }
+    
+    func didReceivePoseChange(notification: NSNotification) {
+        var pose = notification.userInfo![kTLMKeyPose]! as! TLMPose
+        println(pose.type)
+    }
+    
+    func didReceiveGyroChange(notification: NSNotification) {
+        var gyro = notification.userInfo![kTLMKeyGyroscopeEvent]! as! TLMGyroscopeEvent
+        
+        self.sendMovementWith(gyro.vector)
+        
+        //println("\(gyro.vector.x), \(gyro.vector.y), \(gyro.vector.z)")
+        
+    }
+    
+    func sendMovementWith(gyroVector : TLMVector3) {
+        if gyroVector.z < -200 && !rightHitToggle {
+            rightHitToggle = true
+            sendMessage("[\"hit\",{\"id\":116599,\"data\":\"yo\"}]")
+            counter++
+        }
+        else if gyroVector.z > -200 && rightHitToggle {
+            rightHitToggle = false
+        }
+    }
+    
+    func openSocket() {
+        ws.event.open = {
+            println("open")
+        }
+        ws.event.close = { (code, reason, clean) in
+            println("close")
+        }
+        ws.event.error = { (error) in
+            println("error \(error.localizedDescription)")
+        }
+        ws.event.message = { (message) in
+            if let text = message as? String {
+                println("recv: \(text)")
+            }
+        }
+    }
+    
+    func sendMessage(message : String) {
+        println(message)
+        ws.send(message)
     }
     
     func refreshGraph(quat : TLMQuaternion) {
