@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         TLMHub.sharedHub()
+        TLMHub.sharedHub().shouldNotifyInBackground = true
         return true
     }
 

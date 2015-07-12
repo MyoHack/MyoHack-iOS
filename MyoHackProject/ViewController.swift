@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreMotion
 
 var myoIdentifier : NSUUID = NSUUID(UUIDString: "0A66A6EA-D5D1-F872-E701-49AD2FFC45E4")!
 var xPoints : [CGFloat] = [0.0]
@@ -14,8 +15,9 @@ var yPoints : [CGFloat] = [0.0]
 var zPoints : [CGFloat] = [0.0]
 var wPoints : [CGFloat] = [0.0]
 
-var counter = 0
-var rightHitToggle = false
+var hitToggle = false
+var twistToggle = false
+var phoneToggle = false
 
 var temp : [CGFloat] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
@@ -27,6 +29,8 @@ class ViewController: UIViewController, BEMSimpleLineGraphDataSource, BEMSimpleL
     var wGraph : BEMSimpleLineGraphView!
     
     let ws = WebSocket(url: "ws://45.55.88.179:3000/websocket")
+    
+    var motionManager : CMMotionManager = CMMotionManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,16 +78,46 @@ class ViewController: UIViewController, BEMSimpleLineGraphDataSource, BEMSimpleL
         wGraph.dataSource = self
         wGraph.delegate = self
         self.view.addSubview(wGraph)
+        
+        self.motionManager.accelerometerUpdateInterval = 0.05
+        self.motionManager.gyroUpdateInterval = 0.05
+        
+        /*
+        self.motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue(), withHandler: { (data: CMAccelerometerData!, error: NSError!) -> Void in
+                if data.acceleration.x < -1
+                {
+                    println("Boom")
+                }
+        })
+        */
+        
+        self.motionManager.startGyroUpdatesToQueue(NSOperationQueue(), withHandler: { (data: CMGyroData!, error:NSError!) -> Void in
+                if data.rotationRate.z < -3 && !phoneToggle
+                {
+                    phoneToggle = true
+                    println("Got it")
+                    println("HAT")
+                    self.sendMessage("[\"hit\",{\"id\":116599,\"data\":\"high\"}]")
+                }
+                else {
+                    phoneToggle = false
+                }
+        })
+    }
+    
+    override func canBecomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent) {
+        //println("HAT")
+        //sendMessage("[\"hit\",{\"id\":116599,\"data\":\"high\"}]")
     }
     
     func didReceiveOrientationEvent(notification: NSNotification) {
         var orientation = notification.userInfo![kTLMKeyOrientationEvent]! as! TLMOrientationEvent
        
         self.refreshGraph(orientation.quaternion)
-        
-        /*
-        println("\(orientation.quaternion.x), \(orientation.quaternion.y), \(orientation.quaternion.z), \(orientation.quaternion.w)")
-        */
     }
     
     func didReceivePoseChange(notification: NSNotification) {
@@ -93,26 +127,36 @@ class ViewController: UIViewController, BEMSimpleLineGraphDataSource, BEMSimpleL
     
     func didReceiveGyroChange(notification: NSNotification) {
         var gyro = notification.userInfo![kTLMKeyGyroscopeEvent]! as! TLMGyroscopeEvent
-        
         self.sendMovementWith(gyro.vector)
-        
-        //println("\(gyro.vector.x), \(gyro.vector.y), \(gyro.vector.z)")
-        
     }
     
     func sendMovementWith(gyroVector : TLMVector3) {
-        if gyroVector.z < -200 && !rightHitToggle {
-            rightHitToggle = true
-            sendMessage("[\"hit\",{\"id\":116599,\"data\":\"yo\"}]")
-            counter++
+        // Detect Hit
+        if gyroVector.z < -200 && !hitToggle && !twistToggle {
+            hitToggle = true
+            println("SNARE")
+            sendMessage("[\"snare\",{\"id\":116599,\"data\":\"high\"}]")
         }
-        else if gyroVector.z > -200 && rightHitToggle {
-            rightHitToggle = false
+        else if gyroVector.z > 0 && hitToggle && !twistToggle {
+            hitToggle = false
+            twistToggle = false
+        }
+            
+        // Detect twist
+        else if gyroVector.x < -300 && !twistToggle && !hitToggle {
+            twistToggle = true
+            println("KICK")
+            sendMessage("[\"kick\",{\"id\":116599,\"data\":\"high\"}]")
+        }
+        else if gyroVector.x > 0 && twistToggle && !hitToggle {
+            twistToggle = false
+            hitToggle = false
         }
     }
     
     func openSocket() {
         ws.event.open = {
+            self.sendMessage("[\"start\",{\"id\":116599,\"data\":\"yo\"}]")
             println("open")
         }
         ws.event.close = { (code, reason, clean) in
